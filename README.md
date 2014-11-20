@@ -10,7 +10,7 @@ to create something akin to a camera path.
 Installation
 ============
 
- 1. Install using the *npm* package manager for *Node.js:*
+ 1. Install using the [npm][5] package manager for *Node.js:*
 
         npm install -g s-anim
 
@@ -168,3 +168,4 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [2]: images/hugin_photos_tab.png
 [3]: images/hugin_stitcher_tab.png
 [4]: images/hugin_panorama_preview.png
+[5]: https://www.npmjs.org/
