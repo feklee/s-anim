@@ -1,5 +1,5 @@
 {
-    "name": "stereographic-animator",
+    "name": "s-anim",
     "version": "1.0.0",
     "author": "Felix E. Klee <felix.klee@inka.de>",
     "description": "Animated stereographic projection of a spherical panorama",
