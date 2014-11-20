@@ -79,22 +79,22 @@ Steps:
  5. Open *Hugin,* and add `000.jpg` to the project. Select the image, and
     change *Lens type* to *Equirectangular*. In the *Advanced interface* go to
     *Lens parameters*. Double click on the image file name, and change *Lens
-    degrees of view (v)* to 360. Click *OK* to confirm.
+    degrees of view (v)* to 360.
 
     ![Screenshot of Hugin 2013 with Photos tab][2]
 
  6. Switch to the *Stitcher* tab. As *Projection* select *Stereographic*.
     Adjust the canvas size to the output width and height specified in
-    `config.json`. Change *Field of View* to 200, as a start: It defines the
-    zoom level. Finally click *Preview panorama*.
+    `config.json`. For a start, change *Field of View* to 200; This parameter
+    controls zoom. Finally click *Preview panorama*.
 
     ![Screenshot of Hugin 2013 with Stitcher tab][3]
 
  7. In the *Panorama preview*, click *Num. Transf.*, and adjust *Yaw*, *Pitch*,
     and *Roll*. When the Ricoh Theta was upright when shooting the picture, you
-    may want to start with changing *Pitch* by 90. This gives a birds eye view.
-    Click on the image to quickly adjust pitch and yaw. To zoom in or out,
-    change the *Field of View* (previous step).
+    may want to start with changing *Pitch* by 90. This gives a bird’s-eye
+    view. Click on the image to quickly adjust pitch and yaw. To zoom in or
+    out, change the *Field of View* (previous step).
 
     ![Screenshot of Hugin 2013 with Panorama preview][4]
 
@@ -109,20 +109,20 @@ Steps:
 
         # image lines
         #-hugin  cropFactor=8
-        i w3584 h1792 f4 v360 Ra0 Rb0 Rc0 Rd0 Re0 Eev8.14078 Er1 Eb1 r-159.92 p7.89 y2.45 TrX0 TrY0 TrZ0 j0 a0 b0 c0 d0 e0 g0 t0 Va1 Vb0 Vc0 Vd0 Vx0 Vy0  Vm5 n"C:\some\path\000.jpg"
+        i w3584 h1792 f4 v360 Ra0 Rb0 Rc0 Rd0 Re0 Eev8.14078 Er1 Eb1 r-169.19 p-26.85 y-25.14 TrX0 TrY0 TrZ0 j0 a0 b0 c0 d0 e0 g0 t0 Va1 Vb0 Vc0 Vd0 Vx0 Vy0  Vm5 n"C:\some\path\000.jpg"
 
     Have a look at the line prefixed with `p`. It contains the selected field
     of view (here: `v290`). Go to the line prefixed with `i`. It contains yaw,
-    pitch, and roll (here: `y2.45`, `p7.89`, `r-159.92`).
+    pitch, and roll (here: `y-25.14`, `p-26.85`, `r-169.19`).
 
     Use these parameters to add a key frame in `config.json`:
 
         "keyFrames": {
             "000.jpg": {
                 "fov": 290,
-                "roll": -169.197889441657,
-                "pitch": -26.8529158401883,
-                "yaw": -25.1449433873378
+                "yaw": -25.14,
+                "pitch": -26.85,
+                "roll": -169.19
             }
         }
 
@@ -133,7 +133,7 @@ Steps:
 
         s-anim
 
- 12. Using a video editing software, convert the frames to a video.
+ 12. Using a video editing software, assemble the frames into a video.
 
 
 License
