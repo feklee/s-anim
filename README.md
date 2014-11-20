@@ -81,14 +81,14 @@ Steps:
     *Lens parameters*. Double click on the image file name, and change *Lens
     degrees of view (v)* to 360. Click *OK* to confirm.
 
-    [!Screenshot of Hugin 2013 with Photos tab][2]
+    ![Screenshot of Hugin 2013 with Photos tab][2]
 
  6. Switch to the *Stitcher* tab. As *Projection* select *Stereographic*.
     Adjust the canvas size to the output width and height specified in
     `config.json`. Change *Field of View* to 200, as a start: It defines the
     zoom level. Finally click *Preview panorama*.
 
-    [!Screenshot of Hugin 2013 with Stitcher tab][3]
+    ![Screenshot of Hugin 2013 with Stitcher tab][3]
 
  7. In the *Panorama preview*, click *Num. Transf.*, and adjust *Yaw*, *Pitch*,
     and *Roll*. When the Ricoh Theta was upright when shooting the picture, you
@@ -96,7 +96,7 @@ Steps:
     Click on the image to quickly adjust pitch and yaw. To zoom in or out,
     change the *Field of View* (previous step).
 
-    [!Screenshot of Hugin 2013 with Panorama preview][4]
+    ![Screenshot of Hugin 2013 with Panorama preview][4]
 
  8. Close *Panorama preview* and save the project to a file `hugin.pto`.
 
