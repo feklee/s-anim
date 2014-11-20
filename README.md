@@ -129,7 +129,7 @@ Steps:
  10. Repeat the above steps for more key frames. Not all parameters need to be
     specified for each key frame.
 
- 11. On the command line, run:
+ 11. On the command line, in the same directory as `config.json`, run:
 
         s-anim
 
