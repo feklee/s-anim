@@ -1,0 +1,17 @@
+{
+    "name": "stereographic-animator",
+    "version": "1.0.0",
+    "author": "Felix E. Klee <felix.klee@inka.de>",
+    "description": "Animated stereographic projection of a spherical panorama",
+    "dependencies": {
+        "interpolating-polynomial": "1.x",
+        "linear-interpolator": "1.x",
+        "image-size": "0.3.x"
+    },
+    "bin": {
+        "s-anim": "app.js"
+    },
+    "license": "MIT",
+    "keywords" : ["animation", "video", "hugin", "panorama", "spherical",
+                  "equirectangular", "stereographic"]
+}
