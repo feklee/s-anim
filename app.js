@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 /*jslint node: true, maxlen: 80 */
 
 'use strict';
