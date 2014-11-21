@@ -1,6 +1,6 @@
 {
     "name": "s-anim",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "Felix E. Klee <felix.klee@inka.de>",
     "description": "Animated stereographic projection of a spherical panorama",
     "dependencies": {
@@ -9,7 +9,7 @@
         "image-size": "0.3.x"
     },
     "bin": {
-        "s-anim": "app.js"
+        "s-anim": "./app.js"
     },
     "license": "MIT",
     "keywords" : ["animation", "video", "hugin", "panorama", "spherical",
