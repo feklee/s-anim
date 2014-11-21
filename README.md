@@ -124,7 +124,7 @@ Steps:
             }
         }
 
-  9. Repeat the above steps for more key frames. Not all parameters need to be
+ 9. Repeat the above steps for more key frames. Not all parameters need to be
     specified for each key frame.
 
  10. On the command line, in the same directory as `config.json`, run:
