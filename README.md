@@ -163,7 +163,7 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 [1]: http://www.dpreview.com/forums/post/53759494
-[2]: hugin_photos_tab.png
-[3]: hugin_stitcher_tab.png
-[4]: hugin_panorama_preview.png
+[2]: images/hugin_photos_tab.png
+[3]: images/hugin_stitcher_tab.png
+[4]: images/hugin_panorama_preview.png
 [5]: https://www.npmjs.org/
