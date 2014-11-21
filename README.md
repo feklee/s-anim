@@ -60,9 +60,7 @@ Steps:
             "keyFrames": {}
         }
 
-    Check settings, and adjust as desired.
-
- 4. Specify interpolation method:
+    Available interpolation methods:
 
       + `linear`: Linear interpolation between keyframes.
 
@@ -76,21 +74,21 @@ Steps:
     use any other software to determine the key parameters: *field-of-view, yaw,
     pitch,* and *roll*
 
- 5. Open *Hugin,* and add `000.jpg` to the project. Select the image, and
+ 4. Open *Hugin,* and add `000.jpg` to the project. Select the image, and
     change *Lens type* to *Equirectangular*. In the *Advanced interface* go to
     *Lens parameters*. Double click on the image file name, and change *Lens
     degrees of view (v)* to 360.
 
     ![Screenshot of Hugin 2013 with Photos tab][2]
 
- 6. Switch to the *Stitcher* tab. As *Projection* select *Stereographic*.
+ 5. Switch to the *Stitcher* tab. As *Projection* select *Stereographic*.
     Adjust the canvas size to the output width and height specified in
     `config.json`. For a start, change *Field of View* to 200; This parameter
     controls zoom. Finally click *Preview panorama*.
 
     ![Screenshot of Hugin 2013 with Stitcher tab][3]
 
- 7. In the *Panorama preview*, click *Num. Transf.*, and adjust *Yaw*, *Pitch*,
+ 6. In the *Panorama preview*, click *Num. Transf.*, and adjust *Yaw*, *Pitch*,
     and *Roll*. When the Ricoh Theta was upright when shooting the picture, you
     may want to start with changing *Pitch* by 90. This gives a bird’s-eye
     view. Click on the image to quickly adjust pitch and yaw. To zoom in or
@@ -98,9 +96,9 @@ Steps:
 
     ![Screenshot of Hugin 2013 with Panorama preview][4]
 
- 8. Close *Panorama preview* and save the project to a file `hugin.pto`.
+ 7. Close *Panorama preview* and save the project to a file `hugin.pto`.
 
- 9. Open `hugin.pto` in a text editor:
+ 8. Open `hugin.pto` in a text editor:
 
         # hugin project file
         #hugin_ptoversion 2
@@ -126,14 +124,14 @@ Steps:
             }
         }
 
- 10. Repeat the above steps for more key frames. Not all parameters need to be
+  9. Repeat the above steps for more key frames. Not all parameters need to be
     specified for each key frame.
 
- 11. On the command line, in the same directory as `config.json`, run:
+ 10. On the command line, in the same directory as `config.json`, run:
 
         s-anim
 
- 12. Using a video editing software, assemble the frames into a video.
+ 11. Using a video editing software, assemble the frames into a video.
 
 
 License
