@@ -60,7 +60,7 @@ Steps:
             "keyFrames": {}
         }
 
-    Available interpolation methods:
+    Available methods for interpolation and extrapolation:
 
       + `linear`: Linear interpolation between keyframes, with abrupt changes
         of direction.
