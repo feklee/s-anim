@@ -202,6 +202,8 @@ loadInterpolator = function () {
     switch (config.interpolation) {
     case 'linear':
         return require('linear-interpolator');
+    case 'natural-spline':
+        return require('natural-spline-interpolator');
     case 'polynomial':
         return require('interpolating-polynomial');
     default:

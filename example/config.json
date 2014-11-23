@@ -9,7 +9,7 @@
         "height": 480,
         "path": "stereographic"
     },
-    "interpolation": "polynomial",
+    "interpolation": "natural-spline",
     "keyFrames": {
         "000.jpg": {
             "fov": 60,

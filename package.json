@@ -1,15 +1,15 @@
 {
     "name": "s-anim",
-    "version": "1.0.6",
+    "version": "1.1.0",
     "author": "Felix E. Klee <felix.klee@inka.de>",
     "homepage": "https://github.com/feklee/s-anim",
     "description": "Animated stereographic projection of a spherical panorama",
     "dependencies": {
         "interpolating-polynomial": "1.x",
         "linear-interpolator": "1.x",
+        "natural-spline-interpolator": "1.x",
         "image-size": "0.3.x"
     },
-    "main": "app.js",
     "bin": {
         "s-anim": "./app.js"
     },

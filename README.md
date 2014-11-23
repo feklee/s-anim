@@ -56,18 +56,20 @@ Steps:
                 "height": 480,
                 "path": "stereographic"
             },
-            "interpolation": "polynomial",
+            "interpolation": "natural-spline",
             "keyFrames": {}
         }
 
     Available interpolation methods:
 
-      + `linear`: Linear interpolation between keyframes.
+      + `linear`: Linear interpolation between keyframes, with abrupt changes
+        of direction.
 
-      + `polynomial`: Lagrance polynomial interpolation. This is smoother, more
-        organic, and somewhat bouncy. Certain keyframe combinations result in
-        *overreaction:* The animation temporarily spins far in one direction
-        then back. If that happens, try removing keyframes.
+      + `natural-spline`: Smooth interpolation along keyframes.
+
+      + `polynomial`: Lagrance polynomial interpolation. Certain keyframe
+        combinations result in *overreaction:* The animation temporarily spins
+        far in one direction then back: [Runge's phenomenon][6]
 
     At least one entry needs to be present in the `keyFrames` section. See the
     following steps for how to determine parameters with *Hugin.* Feel free to
@@ -189,3 +191,4 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 [3]: images/hugin_stitcher_tab.png
 [4]: images/hugin_panorama_preview.png
 [5]: https://www.npmjs.org/
+[6]: https://en.wikipedia.org/wiki/Runge%27s_phenomenon
